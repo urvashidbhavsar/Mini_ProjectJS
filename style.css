@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar .logo img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+header .navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .navbar ul li {
+  padding: 20px;
+}
+
+header .navbar ul li a {
+  color: black;
+  font-size: 20px;
+}
+
+.productsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.productcard {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.productcard img {
+  max-width: 100%;
+}
+
+.productcard .prodetails {
+  padding: 10px;
+}
+
+.productcard .title {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.productcard .price {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.productcard .add {
+  padding: 10px 0;
+}
+
+.productcard .brand {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.productcard .add button {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 22px;
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon .cart-badge {
+  position: absolute;
+  top: -10px;
+  font-size: 15px;
+  left: 18px;
+  color: white;
+  background: red;
+  padding: 2px 5px;
+  border-radius: 50%;
+
+}
+
+.cart-container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cart-container .cart-item {
+  border: 1px solid black;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  line-height: 2;
+  position: relative;
+}
+
+.cart-container .cart-item img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.quantity-btn {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
